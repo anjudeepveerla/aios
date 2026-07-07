@@ -169,7 +169,6 @@ function Sphere() {
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
-      className="cursor-grab active:cursor-grabbing"
     >
       <icosahedronGeometry args={[1.8, 64]} />
       <shaderMaterial
@@ -202,7 +201,7 @@ export function SentientSphere() {
   return (
     <Canvas
       camera={{ position: [0, 0, 5], fov: 45 }}
-      className="w-full my-0 h-full py-0"
+      className="w-full my-0 h-full py-0 cursor-grab active:cursor-grabbing"
       dpr={[1, 2]}
       gl={{
         antialias: true,

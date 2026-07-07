@@ -44,7 +44,7 @@ export function About() {
               style={{
                 WebkitTextStroke: index % 2 === 0 ? "none" : "1px rgba(255,255,255,0.3)",
                 color: index % 2 === 0 ? "inherit" : "transparent",
-              }}
+              } as React.CSSProperties}
             >
               {statement}
             </motion.p>

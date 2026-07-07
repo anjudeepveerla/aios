@@ -52,14 +52,16 @@ function MarqueeRow({ items, direction = "left" }: { items: string[]; direction?
               WebkitTextStroke: "1px rgba(255,255,255,0.3)",
               color: "transparent",
               transition: "all 0.3s ease",
-            }}
+            } as React.CSSProperties}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = "white"
-              e.currentTarget.style.WebkitTextStroke = "none"
+              const target = e.currentTarget
+              target.style.color = "white"
+              target.style.setProperty("-webkit-text-stroke", "none")
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.color = "transparent"
-              e.currentTarget.style.WebkitTextStroke = "1px rgba(255,255,255,0.3)"
+              const target = e.currentTarget
+              target.style.color = "transparent"
+              target.style.setProperty("-webkit-text-stroke", "1px rgba(255,255,255,0.3)")
             }}
           >
             {item}
