@@ -5,6 +5,8 @@ import { Works } from "@/components/works"
 import { EnterpriseArchitecture } from "@/components/enterprise-architecture"
 import { IntegrationsAnimation } from "@/components/integrations-animation"
 import { EnterpriseSecurity } from "@/components/enterprise-security"
+import { Benefits } from "@/components/benefits"
+import { FAQ } from "@/components/faq"
 import { VisionStatement } from "@/components/vision-statement"
 import { TechMarquee } from "@/components/tech-marquee"
 import { Footer } from "@/components/footer"
@@ -25,6 +27,8 @@ export default function Home() {
         <EnterpriseArchitecture />
         <IntegrationsAnimation />
         <EnterpriseSecurity />
+        <Benefits />
+        <FAQ />
         <VisionStatement />
         <TechMarquee />
         <Footer />
