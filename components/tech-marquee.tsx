@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 
 const row1 = [
-  "AI OPERATING SYSTEM",
+  "NEXAOS.AI",
   "ENTERPRISE AI",
   "AI AGENTS",
   "KNOWLEDGE ENGINE",

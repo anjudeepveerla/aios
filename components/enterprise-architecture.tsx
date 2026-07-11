@@ -7,7 +7,7 @@ import { Cpu, Database, Eye, GitMerge, Inbox, Activity, Shield } from "lucide-re
 // Define the architecture nodes and their details
 const nodes = {
   aiops: {
-    title: "AI Operating System",
+    title: "nexaos.AI",
     subtitle: "Central Control Kernel",
     description: "The core platform kernel managing process scheduling, memory allocation, context routing, and security policies across all cognitive layers and workflow runtimes.",
     specs: ["Latency: 4ms", "Throughput: 10k tokens/sec", "Security: Zero-Trust Encrypted"],
@@ -58,7 +58,7 @@ const nodes = {
   integrations: {
     title: "Integrations Layer",
     subtitle: "Enterprise Connector Core",
-    description: "Provides secure data ingress/egress tunnels between the AI Operating System and external third-party software, databases, and APIs.",
+    description: "Provides secure data ingress/egress tunnels between nexaos.AI and external third-party software, databases, and APIs.",
     specs: ["Connectors: Pre-built & Custom", "Format: REST / gRPC / Webhook", "Auth: OAuth2 / API Key"],
     icon: Inbox
   },
@@ -144,7 +144,7 @@ export function EnterpriseArchitecture() {
         <div className="lg:col-span-8 w-full flex flex-col items-center overflow-x-auto py-6">
           <div className="min-w-[640px] w-full flex flex-col items-center">
             
-            {/* ROW 1: AI Operating System (Root) */}
+            {/* ROW 1: nexaos.AI (Root) */}
             <div className="w-full flex justify-center">
               <motion.button
                 onClick={() => setActiveNode("aiops")}
@@ -156,7 +156,7 @@ export function EnterpriseArchitecture() {
                     : "bg-white/[0.02] border-white/20 text-white/60 hover:border-white/50"
                 }`}
               >
-                AI Operating System
+                nexaos.AI
               </motion.button>
             </div>
 

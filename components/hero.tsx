@@ -51,7 +51,7 @@ export function Hero() {
           >
             <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-white leading-[1.05] text-balance">
               Unify your enterprise with <br />
-              <span className="font-serif italic font-light text-white/95">AI Operating System</span>
+              <span className="font-serif italic font-light text-white/95">nexaos.AI</span>
             </h1>
           </motion.div>
 
@@ -62,7 +62,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="font-sans text-base md:text-lg lg:text-xl font-light tracking-normal text-white/70 max-w-2xl leading-relaxed text-balance">
-              The AI Operating System (AIOpS) unifies AI, knowledge, applications, and automation into a single intelligent ecosystem.
+              nexaos.AI unifies AI, knowledge, applications, and automation into a single intelligent ecosystem.
             </p>
           </motion.div>
 

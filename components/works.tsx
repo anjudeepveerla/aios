@@ -54,7 +54,7 @@ const layers = [
     title: "Integration Layer",
     shortName: "INTEGRATION",
     subheading: "Connect your entire technology ecosystem.",
-    description: "The Integration Layer allows the AI Operating System to communicate with your existing business applications, cloud services, communication platforms, and enterprise software through a flexible connector framework.",
+    description: "The Integration Layer allows nexaos.AI to communicate with your existing business applications, cloud services, communication platforms, and enterprise software through a flexible connector framework.",
     includes: [
       "Enterprise Connector Framework",
       "Email & Calendar Integrations",
@@ -126,7 +126,7 @@ export function Works() {
               Powering the Next Generation of Enterprise Intelligence
             </p>
             <p className="font-sans text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-2xl">
-              The AI Operating System is built on intelligent layers that work together to unify your organization's knowledge, applications, workflows, and AI capabilities into one seamless platform. Each layer is designed to solve a critical part of how modern enterprises operate, enabling businesses to become more intelligent, automated, and connected.
+              nexaos.AI is built on intelligent layers that work together to unify your organization's knowledge, applications, workflows, and AI capabilities into one seamless platform. Each layer is designed to solve a critical part of how modern enterprises operate, enabling businesses to become more intelligent, automated, and connected.
             </p>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ export function Works() {
         <div className="lg:col-span-5 flex flex-col items-center justify-center min-h-[620px] relative overflow-visible">
           {/* Stack Label (Subtle background) */}
           <div className="absolute top-2 font-mono text-[10px] text-white/20 tracking-[0.2em] uppercase select-none">
-            AIOpS Architecture Stack
+            nexaos.AI Architecture Stack
           </div>
 
           {/* Perspective Stack Container */}
