@@ -49,7 +49,7 @@ export function VisionStatement() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="font-mono text-xs md:text-sm tracking-[0.2em] text-white/70 block pt-4 uppercase"
         >
-          nexaos.AI is built to become that foundation.
+          nexa AIOS is built to become that foundation.
         </motion.span>
 
       </div>

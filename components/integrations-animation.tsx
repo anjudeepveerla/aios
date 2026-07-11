@@ -94,7 +94,7 @@ export function IntegrationsAnimation() {
           })}
         </div>
 
-        {/* Bottom Hub: nexaos.AI Core */}
+        {/* Bottom Hub: nexa AIOS Core */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-center">
           <motion.div 
             className={`border rounded-xs px-8 py-4 bg-[#070707] transition-all duration-500 max-w-sm mx-auto select-none ${
@@ -108,7 +108,7 @@ export function IntegrationsAnimation() {
               DESTINATION_KERNEL
             </span>
             <h3 className="font-mono text-xs font-bold text-white tracking-widest uppercase">
-              NEXAOS.AI
+              NEXA AIOS
             </h3>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ export function IntegrationsAnimation() {
           <div className="w-full flex justify-center pt-8 relative z-10">
             <div className="border border-white/20 rounded-xs px-6 py-3 bg-[#070707] text-center">
               <span className="font-mono text-[8px] text-white/40 block mb-0.5">KERNEL</span>
-              <h3 className="font-mono text-[10px] font-bold text-white tracking-wider">NEXAOS.AI</h3>
+              <h3 className="font-mono text-[10px] font-bold text-white tracking-wider">NEXA AIOS</h3>
             </div>
           </div>
 

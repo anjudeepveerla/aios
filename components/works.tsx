@@ -54,7 +54,7 @@ const layers = [
     title: "Integration Layer",
     shortName: "INTEGRATION",
     subheading: "Connect your entire technology ecosystem.",
-    description: "The Integration Layer allows nexaos.AI to communicate with your existing business applications, cloud services, communication platforms, and enterprise software through a flexible connector framework.",
+    description: "The Integration Layer allows nexa AIOS to communicate with your existing business applications, cloud services, communication platforms, and enterprise software through a flexible connector framework.",
     includes: [
       "Enterprise Connector Framework",
       "Email & Calendar Integrations",
@@ -126,7 +126,7 @@ export function Works() {
               Powering the Next Generation of Enterprise Intelligence
             </p>
             <p className="font-sans text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-2xl">
-              nexaos.AI is built on intelligent layers that work together to unify your organization's knowledge, applications, workflows, and AI capabilities into one seamless platform. Each layer is designed to solve a critical part of how modern enterprises operate, enabling businesses to become more intelligent, automated, and connected.
+              nexa AIOS is built on intelligent layers that work together to unify your organization's knowledge, applications, workflows, and AI capabilities into one seamless platform. Each layer is designed to solve a critical part of how modern enterprises operate, enabling businesses to become more intelligent, automated, and connected.
             </p>
           </motion.div>
         </div>
@@ -135,11 +135,11 @@ export function Works() {
         <div className="lg:col-span-5 flex flex-col items-center justify-center min-h-[620px] relative overflow-visible">
           {/* Stack Label (Subtle background) */}
           <div className="absolute top-2 font-mono text-[10px] text-white/20 tracking-[0.2em] uppercase select-none">
-            nexaos.AI Architecture Stack
+            nexa AIOS Architecture Stack
           </div>
 
           {/* Perspective Stack Container */}
-          <div className="relative w-72 sm:w-80 md:w-[360px] h-[520px] flex items-center justify-center select-none overflow-visible pt-52">
+          <div className="relative w-72 sm:w-80 md:w-[360px] h-[520px] flex items-center justify-center select-none overflow-visible pt-52 [--stack-tx:36px] sm:[--stack-tx:24px] md:[--stack-tx:12px] lg:[--stack-tx:0px]">
             {layers.map((layer, index) => {
               const isExpanded = expandedIndex === index
               const isHovered = hoveredIndex === index
@@ -155,10 +155,10 @@ export function Works() {
                   onClick={() => toggleExpand(index)}
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
-                  className="absolute cursor-pointer focus:outline-none overflow-visible w-72 sm:w-80 md:w-[360px] h-16"
+                  className="absolute left-1/2 cursor-pointer focus:outline-none overflow-visible w-72 sm:w-80 md:w-[360px] h-16"
                   style={{
                     zIndex: index + 10,
-                    transform: `perspective(800px) rotateX(55deg) rotateZ(-30deg) translateY(${baseTranslateY}px)`,
+                    transform: `perspective(800px) rotateX(55deg) rotateZ(-30deg) translateY(${baseTranslateY}px) translateX(calc(-50% + var(--stack-tx, 0px)))`,
                   }}
                 >
                   <div

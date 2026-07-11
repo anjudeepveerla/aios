@@ -12,13 +12,13 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     num: "01",
-    question: "What is nexaos.AI?",
-    answer: "nexaos.AI is a unified enterprise platform that combines artificial intelligence, organizational knowledge, workflow automation, business applications, and intelligent AI agents into a single ecosystem. Rather than replacing your existing software, it connects and enhances it through one intelligent layer.",
+    question: "What is nexa AIOS?",
+    answer: "nexa AIOS is a unified enterprise platform that combines artificial intelligence, organizational knowledge, workflow automation, business applications, and intelligent AI agents into a single ecosystem. Rather than replacing your existing software, it connects and enhances it through one intelligent layer.",
   },
   {
     num: "02",
-    question: "How is nexaos.AI different from a chatbot?",
-    answer: "Traditional chatbots answer questions. nexaos.AI goes far beyond conversation by orchestrating AI agents, retrieving enterprise knowledge, automating workflows, executing business tasks, integrating with existing systems, and supporting organization-wide collaboration.",
+    question: "How is nexa AIOS different from a chatbot?",
+    answer: "Traditional chatbots answer questions. nexa AIOS goes far beyond conversation by orchestrating AI agents, retrieving enterprise knowledge, automating workflows, executing business tasks, integrating with existing systems, and supporting organization-wide collaboration.",
   },
   {
     num: "03",
@@ -42,13 +42,13 @@ const faqs: FAQItem[] = [
   },
   {
     num: "07",
-    question: "Which industries can use nexaos.AI?",
+    question: "Which industries can use nexa AIOS?",
     answer: "The platform is designed to be industry-agnostic and can be adapted for healthcare, finance, legal, education, manufacturing, retail, real estate, human resources, government, insurance, and many other sectors through configurable AI modules and workflows.",
   },
   {
     num: "08",
-    question: "Is nexaos.AI available today?",
-    answer: "The platform is currently being developed as a next-generation enterprise intelligence platform. Organizations can request early access, schedule demonstrations, and partner with us to explore how nexaos.AI can transform their operations as new capabilities become available.",
+    question: "Is nexa AIOS available today?",
+    answer: "The platform is currently being developed as a next-generation enterprise intelligence platform. Organizations can request early access, schedule demonstrations, and partner with us to explore how nexa AIOS can transform their operations as new capabilities become available.",
   },
 ]
 
@@ -87,7 +87,7 @@ export function FAQ() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-sans text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-xl mx-auto"
           >
-            Answers to key aspects of the nexaos.AI capability, integration, and security.
+            Answers to key aspects of the nexa AIOS capability, integration, and security.
           </motion.p>
         </div>
 

@@ -7,7 +7,7 @@ import { Cpu, Database, Eye, GitMerge, Inbox, Activity, Shield } from "lucide-re
 // Define the architecture nodes and their details
 const nodes = {
   aiops: {
-    title: "nexaos.AI",
+    title: "nexa AIOS",
     subtitle: "Central Control Kernel",
     description: "The core platform kernel managing process scheduling, memory allocation, context routing, and security policies across all cognitive layers and workflow runtimes.",
     specs: ["Latency: 4ms", "Throughput: 10k tokens/sec", "Security: Zero-Trust Encrypted"],
@@ -58,7 +58,7 @@ const nodes = {
   integrations: {
     title: "Integrations Layer",
     subtitle: "Enterprise Connector Core",
-    description: "Provides secure data ingress/egress tunnels between nexaos.AI and external third-party software, databases, and APIs.",
+    description: "Provides secure data ingress/egress tunnels between nexa AIOS and external third-party software, databases, and APIs.",
     specs: ["Connectors: Pre-built & Custom", "Format: REST / gRPC / Webhook", "Auth: OAuth2 / API Key"],
     icon: Inbox
   },
@@ -141,10 +141,11 @@ export function EnterpriseArchitecture() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative z-10">
         
         {/* Left Column: Interactive Diagram Grid */}
-        <div className="lg:col-span-8 w-full flex flex-col items-center overflow-x-auto py-6">
-          <div className="min-w-[640px] w-full flex flex-col items-center">
+        <div className="lg:col-span-8 w-full flex flex-col items-center py-6">
+          {/* Desktop View: 4-Column Connected Flowchart (Hidden on Mobile) */}
+          <div className="hidden lg:flex min-w-[640px] w-full flex-col items-center">
             
-            {/* ROW 1: nexaos.AI (Root) */}
+            {/* ROW 1: nexa AIOS (Root) */}
             <div className="w-full flex justify-center">
               <motion.button
                 onClick={() => setActiveNode("aiops")}
@@ -156,7 +157,7 @@ export function EnterpriseArchitecture() {
                     : "bg-white/[0.02] border-white/20 text-white/60 hover:border-white/50"
                 }`}
               >
-                nexaos.AI
+                nexa AIOS
               </motion.button>
             </div>
 
@@ -333,7 +334,142 @@ export function EnterpriseArchitecture() {
                 Enterprise Intelligence
               </motion.button>
             </div>
+          </div>
 
+          {/* Mobile View: Vertical / 2x2 Connected Flow (Hidden on Desktop, Fits Mobile Perfectly) */}
+          <div className="flex lg:hidden flex-col items-center w-full max-w-sm px-4">
+            {/* Root: nexa AIOS */}
+            <motion.button
+              onClick={() => setActiveNode("aiops")}
+              className={`w-full py-3.5 border rounded-sm font-mono text-xs uppercase tracking-widest text-center transition-all duration-300 ${
+                activeNode === "aiops"
+                  ? "bg-white/15 border-white text-white shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+                  : "bg-white/[0.02] border-white/20 text-white/60"
+              }`}
+            >
+              nexa AIOS
+            </motion.button>
+
+            {/* Connecting line */}
+            <div className="w-px h-6 bg-white/20" />
+
+            {/* 2x2 Grid of Column Pairs */}
+            <div className="grid grid-cols-2 gap-4 w-full">
+              {/* Col 1: Knowledge & Memory */}
+              <div className="flex flex-col items-center">
+                <motion.button
+                  onClick={() => setActiveNode("knowledge")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "knowledge"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  Knowledge
+                </motion.button>
+                <div className="w-px h-4 bg-white/15" />
+                <motion.button
+                  onClick={() => setActiveNode("memory")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "memory"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  Memory
+                </motion.button>
+              </div>
+
+              {/* Col 2: AI Manager & AI Agents */}
+              <div className="flex flex-col items-center">
+                <motion.button
+                  onClick={() => setActiveNode("manager")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "manager"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  AI Manager
+                </motion.button>
+                <div className="w-px h-4 bg-white/15" />
+                <motion.button
+                  onClick={() => setActiveNode("agents")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "agents"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  AI Agents
+                </motion.button>
+              </div>
+
+              {/* Col 3: Workflow Engine & Automations */}
+              <div className="flex flex-col items-center">
+                <motion.button
+                  onClick={() => setActiveNode("engine")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "engine"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  Workflow Engine
+                </motion.button>
+                <div className="w-px h-4 bg-white/15" />
+                <motion.button
+                  onClick={() => setActiveNode("automations")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "automations"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  Automations
+                </motion.button>
+              </div>
+
+              {/* Col 4: Integrations Layer & Connectors */}
+              <div className="flex flex-col items-center">
+                <motion.button
+                  onClick={() => setActiveNode("integrations")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "integrations"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  Integrations
+                </motion.button>
+                <div className="w-px h-4 bg-white/15" />
+                <motion.button
+                  onClick={() => setActiveNode("connectors")}
+                  className={`w-full py-3 border rounded-sm font-mono text-[9px] uppercase tracking-wider text-center transition-all duration-300 ${
+                    activeNode === "connectors"
+                      ? "bg-white/15 border-white text-white shadow-[0_0_10px_rgba(255,255,255,0.15)]"
+                      : "bg-white/[0.01] border-white/15 text-white/50"
+                  }`}
+                >
+                  Gmail Slack CRM
+                </motion.button>
+              </div>
+            </div>
+
+            {/* Connecting line */}
+            <div className="w-px h-6 bg-white/20" />
+
+            {/* Foundation: Enterprise Intelligence */}
+            <motion.button
+              onClick={() => setActiveNode("intelligence")}
+              className={`w-full py-3.5 border rounded-sm font-mono text-[10px] uppercase tracking-[0.15em] text-center transition-all duration-300 ${
+                activeNode === "intelligence"
+                  ? "bg-white/15 border-white text-white shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+                  : "bg-white/[0.02] border-white/20 text-white/60"
+              }`}
+            >
+              Enterprise Intelligence
+            </motion.button>
           </div>
         </div>
 

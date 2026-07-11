@@ -22,8 +22,8 @@ const benefits: Benefit[] = [
     category: "INTELLIGENCE",
     stat: "100% Data Connected",
     codeSnippet: `// initialize intelligence graph
-const nexaos = new Nexaos();
-await nexaos.connect({
+const nexa = new Nexa();
+await nexa.connect({
   sources: ["docs", "emails", "conversations"],
   privacy: "strict-tenant-isolation"
 });`,
@@ -51,7 +51,7 @@ await scheduler.coordinate(executor, {
     stat: "Real-time Context",
     codeSnippet: `// query contextual recommendations
 const query = "Q3 financial forecast comparison";
-const insights = await nexaos.retrieveContext(query, {
+const insights = await nexa.retrieveContext(query, {
   depth: "deep-semantic-search"
 });`,
     icon: Eye,
@@ -63,8 +63,8 @@ const insights = await nexaos.retrieveContext(query, {
     category: "AUTOMATION",
     stat: "Event-driven workflows",
     codeSnippet: `// event trigger workflow hook
-nexaos.on("opportunity-closed", async (deal) => {
-  await nexaos.trigger("provision-service", {
+nexa.on("opportunity-closed", async (deal) => {
+  await nexa.trigger("provision-service", {
     clientId: deal.clientId
   });
 });`,
@@ -91,7 +91,7 @@ await guard.enforce({
     category: "CONNECTIVITY",
     stat: "Extensible Connectors",
     codeSnippet: `// connect APIs and services
-await nexaos.registerConnector("custom-crm", {
+await nexa.registerConnector("custom-crm", {
   auth: "OAuth2",
   endpoints: ["/users", "/deals"]
 });`,
@@ -118,7 +118,7 @@ await cluster.replicate({
     category: "FUTURE",
     stat: "Model Agnostic",
     codeSnippet: `// upgrade core AI models dynamically
-await nexaos.models.upgrade({
+await nexa.models.upgrade({
   primary: "gpt-5-preview",
   fallback: "claude-4"
 });`,
@@ -147,10 +147,10 @@ export function Benefits() {
               Value Proposition // Capability Grid
             </span>
             <h2 className="font-sans text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-white mb-6">
-              Why Organizations Choose nexaos.AI
+              Why Organizations Choose nexa AIOS
             </h2>
             <p className="font-sans text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-3xl">
-              nexaos.AI transforms the way organizations work by bringing intelligence, automation, and enterprise knowledge into one unified platform.
+              nexa AIOS transforms the way organizations work by bringing intelligence, automation, and enterprise knowledge into one unified platform.
             </p>
           </motion.div>
         </div>
@@ -253,7 +253,7 @@ export function Benefits() {
               {/* High-tech Code Terminal Visualizer */}
               <div className="border border-white/5 bg-[#030303] p-4 font-mono text-[11px] leading-relaxed text-white/70 overflow-x-auto select-none">
                 <div className="flex items-center justify-between text-white/30 border-b border-white/5 pb-2 mb-3">
-                  <span>NEXAOS_CONSOLE_INIT</span>
+                  <span>NEXA_AIOS_CONSOLE_INIT</span>
                   <span>UTF-8</span>
                 </div>
                 <AnimatePresence mode="wait">
