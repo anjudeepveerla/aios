@@ -12,7 +12,8 @@ We have configured full-scale search engine optimization (SEO) and Open Graph (O
 
 ### 2. Centered Interactive 3D Stack (Image 1 Fix)
 - Configured a responsive CSS translation variable `--stack-tx` on the perspective stack container inside [works.tsx](file:///Users/anjudeepveerla/Downloads/GIT%20REPOS/aios/components/works.tsx).
-- Offset the stack's 3D rotation angle (`rotateZ(-30deg)`) on mobile viewports by adding a positive horizontal translation (`translateX(var(--stack-tx))`). This aligns the visual center of the layers perfectly on mobile screens instead of shifting them off-screen to the left.
+- Positioned the layers using absolute layout centered with `left-1/2` and `translateX(calc(-50% + var(--stack-tx)))`.
+- Tuned the horizontal displacement factors: `--stack-tx:36px` on mobile, `24px` on sm, `12px` on md, and `0px` on lg screens to perfectly center the rotated and tilted layers within the viewport of all devices.
 
 ### 3. Vertical Node Architecture (Image 2 Fix)
 - Designed a mobile-only stacked vertical flow chart inside [enterprise-architecture.tsx](file:///Users/anjudeepveerla/Downloads/GIT%20REPOS/aios/components/enterprise-architecture.tsx).
